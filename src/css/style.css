@@ -1,7 +1,7 @@
 body{
     font-family: "Oxanium";
-    background-color: black;
-    color: #ffffffff;
+    background-color: rgb(255, 255, 255);
+    color: rgb(10, 10, 10);
     min-height: calc(100vh - 152px);
     
     
@@ -9,7 +9,7 @@ body{
 
 body::before{
     content: "";
-    background-image: url(../imagens/bg-desktop.jpg);
+    /* background-image: url(../imagens/bg-desktop.jpg); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -24,11 +24,16 @@ body::before{
 .cabecalho{
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
+    
+    
 }
 
 .cabecalho .logo-xmen{
     
-    max-width: 200px;
+    
+    max-width: 300px;
+    
 }
 
 .selecao-de-personagens{
@@ -61,7 +66,7 @@ body::before{
     font-size: 20px;
     letter-spacing: 4px;
     text-transform: uppercase;
-    border-bottom: 2px solid #47f4ff;
+    border-bottom: 2px solid #0000002d;
     width: 100%;
     text-align: center;
 }
@@ -69,29 +74,29 @@ body::before{
 .lista-personagens .personagem img{
 width: 100%;
 height: 100%;
-border-bottom: 2px solid #47f4ff;
+border-bottom: 2px solid #0000002d;
 }
 
 .lista-personagens .personagem.selecionado{
-    box-shadow: 0px 0px 24px 5px #4791ff;
+    box-shadow: 0px 0px 24px 5px #00000059;
 }
 
 .personagem-view{
     text-align: center;
-    max-height: 530px;
+    /* max-height: 530px; */
 }
 
 .personagem-view .nome-personagem{
     letter-spacing: 4px;
     text-transform: uppercase;
-    border-bottom: 2px solid #47f4ff;
+    border-bottom: 2px solid #0000002d;
     width: 100%;
     
 }
 
 .personagem-view .personagem-grande{
-    width: 430px;
-    height: 430px;
+    /* width: 430px;
+    height: 430px; */
 }
 
 .personagem-view .descricao-personagem{

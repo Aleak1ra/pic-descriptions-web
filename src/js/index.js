@@ -2,7 +2,7 @@ const personagens = document.querySelectorAll('.personagem');
 const imagemGrande = document.querySelector('.personagem-view .personagem-grande');
 const nomePersonagem = document.querySelector('.personagem-view .nome-personagem');
 const descricaoPersonagem = document.querySelector('.personagem-view .descricao-personagem');
-let imagemAtual = "./src/imagens/card-ciclope.png"; // Variável para armazenar a imagem atual
+let imagemAtual = "./src/imagens/tenis-nike.png"; // Variável para armazenar a imagem atual
 
 personagens.forEach((personagem) => {
     personagem.addEventListener('mouseenter', () => {
@@ -12,7 +12,7 @@ personagens.forEach((personagem) => {
         const descricao = obterDescricaoPersonagem(nome);
 
         // Atualiza a imagemGrande para card-"nome do personagem que está selecionado"
-        imagemGrande.src = `./src/imagens/card-${nome}.png`;
+        imagemGrande.src = `./src/imagens/tenis-${nome}.png`;
         nomePersonagem.textContent = nome;
         descricaoPersonagem.textContent = descricao;
 
@@ -33,31 +33,31 @@ function obterDescricaoPersonagem(personagemId) {
 
     switch (personagemId) {
         case 'ciclope':
-            descricao = 'Descrição do Ciclope';
+            descricao = 'Descrição Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, distinctio.';
             break;
         case 'jean-grey':
-            descricao = 'Descrição da Jean Grey';
+            descricao = 'Descrição Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, distinctio.';
             break;
         case 'lince-negra':
-            descricao = 'Descrição da Lince Negra';
+            descricao = 'Descrição Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, distinctio.';
             break;
         case 'tempestade':
-            descricao = 'Descrição da Tempestade';
+            descricao = 'Descrição Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, distinctio.';
             break;
         case 'vampira':
-            descricao = 'Descrição da Vampira';
+            descricao = 'Descrição Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, distinctio.';
             break;
         case 'wolverine':
-            descricao = 'Descrição do Wolverine';
+            descricao = 'Descrição Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, distinctio.';
             break;
         case 'noturno':
-            descricao = 'Descrição do Noturno';
+            descricao = 'Descrição Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, distinctio.';
             break;
         case 'magneto':
-            descricao = 'Descrição do Magneto';
+            descricao = 'Descrição Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, distinctio.';
             break;
         default:
-            descricao = 'Descrição do Personagem';
+            descricao = 'Descrição Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, distinctio.';
             break;
     }
 
